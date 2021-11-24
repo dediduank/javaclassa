@@ -20,7 +20,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </tr>
         <tr th:each="barang,count:${namapaket}">
             <td th:text="${count.index+1}"></td>
-            <td th:text="${barang}"></td>
+            <td th:text="${barang[0]}"></td>
+            <td th:text="${barang[1]}"></td>
         </tr>
         </table>
     </body>
